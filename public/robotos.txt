@@ -1,0 +1,12 @@
+# robots.txt for Sanjay K Pathak & Associates (CA Firm)
+
+# Allow all search engines to crawl the public site
+User-agent: *
+Allow: /
+
+# Disallow crawling of development or private paths (adjust if you don’t have these)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /drafts/
+

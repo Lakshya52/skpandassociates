@@ -1,0 +1,157 @@
+:root {
+  --color-primary : #18204e
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+
+/* fonts: Google Fonts loaded via index.html for performance */
+@import "tailwindcss";
+
+
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* for underline hovering effect */
+
+.li-custom {
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.li-custom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #cfcfcf;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.li-custom:hover::after {
+  width: 100%;
+  animation: heartbeat116 1.5s ease-in-out 0.3s infinite;
+}
+
+@keyframes heartbeat116 {
+
+  0%,
+  100% {
+    width: 100%;
+  }
+
+  50% {
+    width: 60%;
+  }
+}
+
+
+.font-playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* custom fonts */
+
+@font-face {
+  font-family: 'gwynerFont';
+  /* Choose a unique name for your font */
+  src: local('gwynerFont'), url('./fonts/gwyner-regular.ttf') format('truetype');
+  /* Add more src lines for different formats (woff, woff2, etc.) for broader compatibility */
+  font-weight: normal;
+  /* Adjust as needed */
+  font-style: normal;
+  /* Adjust as needed */
+  font-display: swap;
+}
+
+.font-gwynerCondensedFont {
+  font-family: 'gwynerFont', sans-serif;
+  /* Fallback font is recommended */
+}
+
+
+/* gwen regular font */
+@font-face {
+  font-family: 'gwenFontRegular';
+  src: local('gwenFontRegular'), url('./fonts/Gwen-Trial-Regular.otf') format('truetype');
+  /* Add more src lines for different formats (woff, woff2, etc.) for broader compatibility */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-gwen-regular {
+  font-family: 'gwenFontRegular', sans-serif;
+  /* Fallback font is recommended */
+}
+
+/* gwen semibold font */
+@font-face {
+  font-family: 'gwenFontSemibold';
+  src: local('gwenFontSemibold'), url('./fonts/Gwen-Trial-SemiBold.woff2') format('woff2');
+  /* Add more src lines for different formats (woff, woff2, etc.) for broader compatibility */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-gwen-semibold {
+  font-family: 'gwenFontSemibold', sans-serif;
+  font-display: auto;
+  /* Fallback font is recommended */
+}
+
+
+/* animation for the hero button  */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 6s linear infinite;
+}
+/* .animate-spin-slow:hover {
+  animation: stop 6s linear infinite;
+} */
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}
