@@ -59,7 +59,7 @@ const HeroBanner = () => {
             
 
             {/* major services - scrolling banner */}
-            <div className='relative w-full bg-gradient-to-br from-(--color-primary) via-[#3d4a9c] to-(--color-primary) py-5 md:py-7 overflow-hidden shadow-2xl'>
+            <div className='relative w-full  py-5 md:py-7 overflow-hidden shadow-2xl'>
                 
                 <div className='service-scroll-container flex gap-5 md:gap-8 w-fit cursor-pointer'>
                     {[...services, ...services].map((service, idx) => (
@@ -69,7 +69,7 @@ const HeroBanner = () => {
                             onClick={() => window.scrollTo({ top: 0, behavior: 'instant' })}
                             className='flex-shrink-0 whitespace-nowrap no-underline'
                         >
-                            <div className='inline-flex items-center gap-5 px-5 md:px-10  rounded-lg text-white font-semibold text-sm md:text-base hover:from-white/15 hover:to-white/20 hover:border-white/50 hover:scale-105 transition-all duration-300'>
+                            <div className='inline-flex items-center gap-5 px-5 md:px-10  rounded-lg text-(--color-primary) font-semibold text-sm md:text-base hover:from-white/15 hover:to-white/20 hover:border-white/50 hover:scale-105 transition-all duration-300'>
                                 <div className='w-2 h-2 rounded-full bg-[#ff6b6b]'></div>
                                 {service.name}
                             </div>

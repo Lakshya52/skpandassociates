@@ -71,90 +71,61 @@ const Contact = () => {
 
   // Branch and head office data
   const office_locations = [
-    // head office uttar pradesh
+    // head office bihar
     {
-      name: "Uttar Pradesh",
-      contacePerson: "GAGAN KINRA",
-      email: "email@gmil.com",
-      phone: "+91 98972 95511",
-      address: "H. No 32, Phase-III-B, Pant Vihar, ITC Road, Saharanpur, U.P.- 247001",
-      // mapEmbed: <iframe
-      //   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.119964024052!2d77.5452343151156!3d29.96411098191116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb3e0e0e0e0e0%3A0x0!2sH.%20No%2032%2C%20Phase-III-B%2C%20Pant%20Vihar%2C%20ITC%20Road%2C%20Saharanpur%2C%20U.P.-%20247001!5e0!3m2!1sen!2sin!4v1710000000004!5m2!1sen!2sin"
-      //   width="100%"
-      //   height="100%"
-      //   style={{ border: 0 }}
-      //   allowFullScreen=""
-      //   loading="lazy"
-      //   referrerPolicy="no-referrer-when-downgrade"
-      //   title="Registered Office"
-      // ></iframe>
-
-
-
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.569379038977!2d77.53277785025406!3d29.942723976340492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eebca38815c15%3A0x5b7ee36557760617!2sKinra%20%26%20Associates!5e0!3m2!1sen!2sin!4v1759843353310!5m2!1sen!2sin" width="100%"
+      name: "Darbhanga - Bihar",
+      // contacePerson: "Professor Shravan Kumar Mishra",
+      // email: "email@gmil.com",
+      // phone: "+91 98972 95511",
+      address: "H/O Professor Shravan Kumar Mishra Retd. Principal West Of Dighi Pokhar Professor’s Colony Darbhanga- 846004",
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1790.6921633982558!2d85.90207821066146!3d26.15161007779663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39edb91a510d23f3%3A0xeabdbc55df1b51c7!2sProfessor&#39;s%20Colony!5e0!3m2!1sen!2sin!4v1772255321684!5m2!1sen!2sin"
+        width="100%"
         height="100%"
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="Registered Office"></iframe>
+        title="Registered Head Office"></iframe>
     },
 
     // branch offices
-    // delhi
+    // noida
     {
-      name: "Delhi",
-      contacePerson: "CHETAN KHURANA",
-      email: "email@gmail.com",
-      phone: "+91 78273 01577",
-      address: "843, Gautam, Gali Jwala Nagar, Shahdara, Delhi-110032",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.6347927110155!2d77.29724577457438!3d28.670651882350278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb70cf59db6d%3A0x1fe19019ab89202f!2s843%2C%20Gautam%20Gali%2C%20Jawala%20Nagar%2C%20Shahdara%2C%20Delhi%2C%20110032!5e0!3m2!1sen!2sin!4v1754998898331!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Delhi Office"></iframe>
+      name: "Noida - Uttar Pradesh",
+      // contacePerson: "CHETAN KHURANA",
+      // email: "email@gmail.com",
+      // phone: "+91 78273 01577",
+      address: "C- 69, Sector-2, Noida, Uttar Pradesh- 201301",
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.373249038951!2d77.31241644296803!3d28.583727426874365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce45ed6f7bf2d%3A0xafef075582efcd5e!2sSANJAY%20K%20PATHAK%20%26%20ASSOCIATES!5e0!3m2!1sen!2sin!4v1772255564153!5m2!1sen!2sin" 
+       width="100%" 
+       height="100%" 
+       style={{ border: 0 }} 
+       allowFullScreen="" 
+       loading="lazy" 
+       referrerPolicy="no-referrer-when-downgrade" 
+       title="Noida Office"></iframe>
     },
-    // karnataka
+    // Lic Building
     {
-      name: "Karnataka",
-      contacePerson: "ADITYA A K",
-      email: "email@gmail.com",
-      phone: "+91 82173 93670",
-      address: "76, 2nd Floor, Hanumanthanagara, 50 ft Road, Bengaluru, Karnataka-560019",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62216.81902117869!2d77.51484087877355!3d12.936542272877045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15f4b7246165%3A0x262e856aea3cb36d!2sSilicon%20Honda%20Hanumanthnagar!5e0!3m2!1sen!2sin!4v1754998967850!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Mumbai Office"></iframe>
+      name: "Chennai",
+      // contacePerson: "ADITYA A K",
+      // email: "email@gmail.com",
+      // phone: "+91 82173 93670",
+      address: "Room No- 137 – New, 2nd Floor Above Andhra Bank. Mount Road, Near LIC Building Chennai- 600002",
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.2755832844216!2d80.26473107161392!3d13.064216705935731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526619fb44a541%3A0x7d2cd756512a6984!2sLIC%20Building%2C%20LIC%20SOUTHERN%20ZONAL%20OFFICE%2C%20Anna%20Salai%2C%20Chennai%2C%20Tamil%20Nadu%20600002!5e0!3m2!1sen!2sin!4v1772255699898!5m2!1sen!2sin" 
+      width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
+      
     },
     // maharashtra
     {
-      name: "Maharashtra",
-      contacePerson: "DEVANSH JI VAISHYA",
-      email: "email@gmail.com",
-      phone: "+91 89758 16000",
-      address: "101-102/B7 Gangadham Phase 1, Marketyard Jagdish Niwas, Pune, Maharashtra-411037",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1648580777523!2d73.87197977423627!3d18.476190270530314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea9afbd3def9%3A0x1c8ce8f1fece189f!2sGangaDham%20Phase%201!5e0!3m2!1sen!2sin!4v1754999034638!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Bangalore Office"></iframe>
-    },
-    // madhya pradesh
-    {
-      name: "Madhya Pradesh",
-      contacePerson: "AYUSH SAXENA",
-      email: "email@gmail.com",
-      phone: "+91 99588 34607",
-      address: "H. No. 40, Shiv Shakti Nagar, Ahmadpur, Hoshangabad Road, Bhopal, Madhya Pradesh-462026",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3667.4048515703466!2d77.455826!3d23.191912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDExJzMwLjkiTiA3N8KwMjcnMjEuMCJF!5e0!3m2!1sen!2sin!4v1756895289549!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
-    },
-    // gujarat
-    {
-      name: "Gujarat",
-      contacePerson: "BHAVIK HIRABHAI RUPAPARA",
-      email: "email@gmail.com",
-      phone: "+91 98791 53657",
-      address: "310, Star Chamber, Rajkot, Gujarat-360001",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.4531732158825!2d70.79621797434463!3d22.298694742955384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb00269c00e3%3A0x7f86ba477321e7ce!2sStarChember!5e0!3m2!1sen!2sin!4v1754999102400!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
-    },
-    // Bihar
-    {
-      name: "Bihar",
-      contacePerson: "ABHINAV KUMAR",
-      email: "email@gmail.com",
-      phone: "+91 79034 10638",
-      address: "435, Adison Arcade, Fraser Road, Patna, Bihar-800001",
-      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.749208696946!2d85.13840612445657!3d25.61324861472521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b92f5e263%3A0x264c261d6914a9b9!2sAdision%20Arcade!5e0!3m2!1sen!2sin!4v1754999150678!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Chennai Office"></iframe>
-    },
+      name: "New Delhi",
+      // contacePerson: "DEVANSH JI VAISHYA",
+      // email: "email@gmail.com",
+      // phone: "+91 89758 16000",
+      address: "GF - 22, Hans Bhawan 1, Bahadur Shah Zafar Marg New Delhi – 110002",
+      mapEmbed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1041.1782420316442!2d77.24107179250342!3d28.626998495617656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0024d67645%3A0x53166238b9f005f3!2sHans%20Bhawan%20Wing-1!5e0!3m2!1sen!2sin!4v1772255850350!5m2!1sen!2sin" 
+      width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="New Delhi Office"></iframe>
+    }
   ];
 
 

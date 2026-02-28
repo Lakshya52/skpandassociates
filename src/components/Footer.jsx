@@ -34,7 +34,8 @@ const Footer = () => {
               <p className="font-light font-playfair-display text-base sm:text-lg">Chartered Accountants</p>
             </Link>
             <p className="text-xs sm:text-base md:text-md text-justify font-light sm:text-center  md:text-justify max-w-[90%]">
-              Our firm offers financial, taxation, audit, and advisory services to businesses, startups, and individuals, assisting them in meeting statutory and regulatory requirements and facilitating informed financial and operational decision-making.
+              {/* Our firm offers financial, taxation, audit, and advisory services to businesses, startups, and individuals, assisting them in meeting statutory and regulatory requirements and facilitating informed financial and operational decision-making. */}
+              Comprehensive Accounting, Taxation, and Advisory Services designed to support regulatory compliance, financial reporting, and informed decision-making for businesses and individuals.
             </p>
           </div>
 
@@ -60,7 +61,7 @@ const Footer = () => {
             <p className="text-lg sm:text-2xl font-gwen-semibold pb-2">Contact Information</p>
             <ul className="flex flex-col gap-2 text-sm sm:text-base font-light items-center md:items-start">
               <li><a href="mailto:info@skpandassociates.com">Email : info@skpandassociates.com</a></li>
-              <li><a href="tel:+919897295511">Phone : +91 98972 95511</a></li>
+              {/* <li><a href="tel:+919897295511">Phone : +91 98972 95511</a></li> */}
             </ul>
           </div>
 

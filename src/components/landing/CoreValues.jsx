@@ -43,10 +43,13 @@ const CoreValues = () => {
                 }
             `}</style>
 
-        <div className="w-full flex items-center justify-center px-6 md:px-10 lg:px-20 py-20 md:py-28">
+        <div className="w-full flex items-center justify-center px-6 md:px-10 lg:px-20 pb-20 md:pb-28">
             <div className="text-center w-full max-w-6xl" data-aos="fade-up">
                 {/* Heading */}
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-gwen-semibold w-full leading-tight text-[#2b3780] mb-4">
+                {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-gwen-semibold w-full leading-tight text-[#2b3780] mb-4">
+                    Our Core Values
+                </h1> */}
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-gwen-semibold w-full leading-snug text-(--color-primary)">
                     Our Core Values
                 </h1>
                 <p className="mb-12 text-base md:text-lg text-gray-700 data-aos-delay=100">
