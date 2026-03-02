@@ -34,19 +34,19 @@ const HeroBanner = () => {
             `}</style>
             
             <div 
-                className="h-[75dvh] w-dvw relative flex items-center justify-start mt-[10dvh]" 
+                className="h-[90dvh] sm:h-[50dvh] xl:h-[75dvh] w-dvw relative flex items-start justify-start mt-[10dvh]" 
             >
                 <img 
                     src="/landing/skp_banner.webp" 
                     alt="skp and associates landing page image" 
-                    className='absolute w-auto h-full object-cover right-0 bottom-0'
+                    className='absolute w-auto h-[50%] sm:h-full object-cover right-0 bottom-0'
                 />
                 {/* content wrapper */}
-                <div className='flex flex-col absolute mx-15 max-w-2xl' >
+                <div className='flex flex-col absolute top-1/8 sm:top-1/4 mx-4 sm:mx-6 md:mx-15 max-w-2xl' >
 
-                    <h1 className="  text-[color:var(--color-primary)] text-3xl  md:text-5xl font-gwen-semibold z-10">Comprehensive Financial, <br /> Audit and Tax Services</h1>
+                    <h1 className="  text-[color:var(--color-primary)] text-2xl  md:text-3xl lg:text-5xl font-gwen-semibold z-10">Comprehensive Financial, <br /> Audit and Tax Services</h1>
 
-                    <p className="mt-5 md:mt-7 mb-5 md:mb-7 text-md md:text-base text-gray-700">
+                    <p className="mt-5 md:mt-7 mb-5 md:mb-7 text-md md:text-base text-gray-700  lg:w-full w-full sm:w-[60%]">
                         Comprehensive Accounting, Taxation, and Advisory Services designed to support regulatory compliance, financial reporting, and informed decision-making for businesses and individuals.
                     </p>
 
